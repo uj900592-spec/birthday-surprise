@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday ❤️</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:Arial,Helvetica,sans-serif;
+  background:linear-gradient(135deg,#fff1f7,#f4efff);
+  color:#3d3040;text-align:center;overflow-x:hidden
+}
+.hero{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  padding:30px 18px;position:relative
+}
+.card{
+  width:min(720px,94vw);background:rgba(255,255,255,.88);
+  border-radius:28px;padding:38px 22px;box-shadow:0 15px 45px rgba(90,50,90,.15);
+  backdrop-filter:blur(8px)
+}
+h1{font-size:clamp(36px,9vw,70px);margin:10px 0;color:#d83f83}
+h2{font-size:30px;color:#bd4f91;margin-bottom:15px}
+p{font-size:18px;line-height:1.75}
+.heart{font-size:50px;animation:pulse 1.5s infinite}
+@keyframes pulse{50%{transform:scale(1.15)}}
+.btn{
+  display:inline-block;margin:16px 6px;padding:14px 24px;border-radius:30px;
+  background:#d83f83;color:#fff;text-decoration:none;font-weight:bold;
+  box-shadow:0 7px 18px rgba(216,63,131,.25)
+}
+.btn:hover{transform:translateY(-2px)}
+section{padding:70px 18px}
+.wrap{width:min(900px,94vw);margin:auto}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.photo{
+  min-height:190px;border-radius:20px;background:linear-gradient(135deg,#f8d8e8,#e8dcff);
+  display:flex;align-items:center;justify-content:center;color:#875d79;font-weight:bold;
+  border:2px dashed #d49bb8
+}
+.quote{
+  background:#fff;border-radius:24px;padding:28px;box-shadow:0 10px 30px rgba(80,50,80,.1);
+  margin-top:20px
+}
+.video{
+  width:min(700px,100%);aspect-ratio:16/9;border-radius:20px;
+  background:#201923;color:white;display:flex;align-items:center;justify-content:center;margin:20px auto;
+}
+.secret{background:linear-gradient(135deg,#e9d7ff,#ffdbe9)}
+footer{padding:30px;color:#806a7b}
+.confetti{position:fixed;top:-20px;font-size:20px;animation:fall linear forwards;pointer-events:none;z-index:10}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg);opacity:.2}}
+.small{font-size:14px;color:#806a7b}
+</style>
+</head>
+<body>
+
+<section class="hero" id="top">
+  <div class="card">
+    <div class="heart">❤️</div>
+    <h1>Happy Birthday, [HER NAME]</h1>
+    <p>✨ A little surprise, made especially for you ✨</p>
+    <a class="btn" href="#message">💌 Open Your Surprise</a>
+  </div>
+</section>
+
+<section id="message">
+  <div class="wrap">
+    <h2>For Someone Special ❤️</h2>
+    <div class="quote">
+      <p>Dear <b>[HER NAME]</b> ❤️</p>
+      <p>
+        Aaj ka din mere liye bhi special hai, kyunki aaj tumhara birthday hai. 🎂
+        Main chahta hoon ki tumhari life hamesha khushiyon se bhari rahe,
+        tumhari har genuine wish poori ho aur tumhare face ki smile hamesha aisi hi rahe. 😊
+      </p>
+      <p>
+        Shayad main tumhe koi bada gift na de paun, lekin ye chhota sa surprise
+        dil se banaya hai. ❤️
+      </p>
+      <p><b>Happy Birthday once again! 🎂✨</b></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Some Beautiful Memories ✨</h2>
+    <p>Kuch moments chhote hote hain, par yaadein bahut badi ban jaati hain. ❤️</p>
+    <div class="gallery">
+      <div class="photo">📸 Add Photo 1</div>
+      <div class="photo">📸 Add Photo 2</div>
+      <div class="photo">📸 Add Photo 3</div>
+      <div class="photo">📸 Add Photo 4</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>🎬 Something Special For You</h2>
+    <p>Ab ek chhota sa video tumhare liye…<br>Bas play karna aur smile karna. 😊❤️</p>
+    <div class="video">🎥 Add your birthday video here</div>
+    <p class="small">Replace this box with your video when you edit the page.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>One Little Reminder ❤️</h2>
+    <div class="quote">
+      <p><b>You are special.<br>You are important.<br>And you deserve lots of happiness. ❤️</b></p>
+      <p>Apni smile kabhi mat khona. 😊</p>
+    </div>
+  </div>
+</section>
+
+<section class="secret" id="secret">
+  <div class="wrap">
+    <h2>🔐 One Last Message…</h2>
+    <div class="quote">
+      <p>Agar tum yahan tak aa gayi ho…<br>toh surprise officially complete! 😄❤️</p>
+      <p><b>Happy Birthday once again, [HER NAME]! 🎂🎉</b></p>
+      <p>
+        Tumhara ye special day bahut saari happiness, smiles aur beautiful memories lekar aaye. ✨
+      </p>
+      <p><b>Enjoy your day! ❤️</b></p>
+    </div>
+    <a class="btn" href="#top">💖 Replay From Beginning</a>
+  </div>
+</section>
+
+<footer>Made with ❤️ just for you</footer>
+
+<script>
+function confetti(){
+  const e=document.createElement('div');
+  e.className='confetti';
+  e.textContent=['❤️','💖','✨','🎉','🌸'][Math.floor(Math.random()*5)];
+  e.style.left=Math.random()*100+'vw';
+  e.style.animationDuration=(3+Math.random()*4)+'s';
+  document.body.appendChild(e);
+  setTimeout(()=>e.remove(),7000);
+}
+setInterval(confetti,350);
+</script>
+</body>
+</html>
